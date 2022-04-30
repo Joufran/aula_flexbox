@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align items</title>
+    
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+
+        .strech{
+            align-items: stretch;
+        }
+
+        .star{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>Center</p>
+    <section class="container center flex">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section>
+
+    <p>Stretch</p>
+    <section class="container  strech">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item. Segundo item maior que o terceiro</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section>   
+
+    <p>Flex-start</p>
+    <section class="container  star">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <p>Flex-end</p>
+    <section class="container  end">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <p>Baseline</p>
+    <section class="container  baseline">
+        <div class="item"><br>Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <h1>COLUMN</h1>
+    <p>Center</p>
+    <section class="container center flex column">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section>
+
+    <p>Stretch</p>
+    <section class="container  strech column">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item. Segundo item maior que o terceiro</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section>   
+
+    <p>Flex-start</p>
+    <section class="container  star column">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <p>Flex-end</p>
+    <section class="container  end column">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <p>Baseline</p>
+    <section class="container  baseline column">
+        <div class="item"><br>Item 01</div>
+        <div class="item">Item 02. segundo item.</div>
+        <div class="item">Item 03. terceiro item. Segundo mais um.</div>
+    </section> 
+
+    <p>ALINHAMENTO CENTRAL A TELA</p>
+    <section class="container central center">
+        <div class="item">
+            The methods themselves usually aren't difficult to understand. 
+      </div>
+    </section>
+
+
+
+</body>
+</html>

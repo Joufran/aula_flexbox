@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding:  0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .strech{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-star{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Strech</p>
+    <div class="container strech">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+    <p>Flex-Start</p>
+    <div class="container flex-star">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+    <p>Flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+    <p>Space-between</p>
+    <div class="container space-beetwen">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+    <p>Space-around</p>
+    <div class="container space-around">
+        <div class="item">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, "</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+        <div class="item">consectetur, adipisci velit...</div>
+    </div>
+
+</body>
+</html>

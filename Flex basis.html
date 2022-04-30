@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex basis</title>
+    <style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bauto{
+            flex-basis: auto;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .w-100{
+            flex-basis: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Auto</p>
+    <div class="flex-container">
+        <div class="item bauto fg-1">A</div>
+        <div class="item bauto fg-1">BB</div>
+        <div class="item bauto fg-1">CCC</div>
+        <div class="item bauto fg-1">DDDD</div>
+    </div>
+
+    <p>0 (zero)</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">A</div>
+        <div class="item b-0 fg-1">BB</div>
+        <div class="item b-0 fg-1">CCC</div>
+        <div class="item b-0 fg-1">DDDD</div>
+    </div>
+
+    <p>Basis - Width</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">A</div>
+        <div class="item b-0 fg-1">BB</div>
+        <div class="item b-0 fg-1">CCC</div>
+        <div class="item b-0 fg-1">DDDD</div>
+    </div>
+
+    <p>Basis - Width 100</p>
+    <div class="flex-container">
+        <div class="item w-100">AAAAAAA</div>
+        <div class="item w-100">BB</div>
+        <div class="item w-100">CCC</div>
+        <div class="item w-100">DDDD</div>
+    </div>
+
+    <p>Basis - Width 100 fg-0</p>
+    <div class="flex-container">
+        <div class="item w-100 fg-0">AAAAAAA</div>
+        <div class="item w-100 fg-0">BB</div>
+        <div class="item w-100 fg-0">CCC</div>
+        <div class="item w-100 fg-0">DDDD</div>
+    </div>
+
+    <p>Basis - Width 100 fg-1</p>
+    <div class="flex-container">
+        <div class="item w-100 fg-1">DDDD</div>
+        <div class="item w-100 fg-1">AAAAAAA</div>
+        <div class="item w-100 fg-1">BB</div>
+        <div class="item w-100 fg-1">CCC</div>
+    </div>
+
+    <p>Basis - Width 100 fg-2</p>
+    <div class="flex-container">
+        <div class="item w-100 fg-2">DDDD</div>
+        <div class="item w-100 fg-2">AAAAAAA</div>
+        <div class="item w-100 fg-2">BB</div>
+        <div class="item w-100 fg-2">CCC</div>
+    </div>
+
+    <p>Basis - Width 100 fg-3</p>
+    <div class="flex-container">
+        <div class="item w-100 fg-3">DDDD</div>
+        <div class="item w-100 fg-3">AAAAAAA</div>
+        <div class="item w-100 fg-3">BB</div>
+        <div class="item w-100 fg-3">CCC</div>
+    </div>
+
+</body>
+</html>
